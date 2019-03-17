@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -57,7 +57,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -71,7 +71,31 @@ p {
     margin: 0 auto;
 }
 
-.top-content {
+header {
+	display: flex;
+	align-items: flex-end;
+	margin: 30px 0 50px 0;
+}
+
+header img {
+	margin-right: 45px;
+}
+
+header nav {
+	display: flex;
+}
+
+header nav a {
+	margin-right: 80px;
+	text-decoration: none;
+	color: black;
+}
+
+header nav a:hover {
+	color: teal;
+}
+
+section.top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -79,10 +103,22 @@ p {
     border-bottom: 1px dashed black;
 }
 
+section.top-content img {
+	margin-bottom: 10px;
+}
+
+.top-content-contain {
+	display: flex;
+}
+
 .top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+    width: 50%;
+    padding: 20px 10px;
+}
+
+.text-container h2 {
+	font-size: 20px;
+	font-weight: 500;
 }
 
 .middle-content {
@@ -92,7 +128,9 @@ p {
 
 .middle-content h2 {
     padding: 0 2%;
-    margin-bottom: 0;
+    margin-bottom: 5px;
+		font-size: 20px;
+		font-weight: 500;
 }
 
 .middle-content .boxes {
@@ -104,12 +142,51 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box1{
+	background: teal;
+}
+
+.box2{
+	background: gold;
+}
+
+.box3{
+	background: cadetblue;
+}
+
+.box4{
+	background: coral;
+}
+
+.box5{
+	background: crimson;
+}
+
+.box6{
+	background: forestgreen;
+}
+
+.box7{
+	background: darkorchid;
+}
+
+.box8{
+	background: hotpink;
+}
+
+.box9{
+	background: indigo;
+}
+
+.box10{
+	background: dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +220,53 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.about-text-container {
+	padding: 20px;
+}
+
+.about-text-container h2 {
+	font-size: 20px;
+}
+
+section.about-middle {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.about-mid-content-contain {
+	width: 48%;
+	padding: 10px 0px;
+	margin-bottom: 50px;
+  border-bottom: 1px dashed black;
+}
+
+.about-mid-content-contain img {
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.about-mid-content-contain h2 {
+	font-size: 20px;
+}
+
+.about-mid-content-contain p {
+	margin-bottom: 15px;
+}
+
+section.about-middle button {
+	margin-bottom: 15px;
+	font-size: 16px;
+	color: black;
+	background: white;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 9px 25px;
+	cursor: pointer;
+}
+
+section.last-content {
+	margin-bottom: 50px;
 }
